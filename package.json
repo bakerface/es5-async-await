@@ -1,0 +1,56 @@
+{
+  "name": "es5-async-await",
+  "version": "1.0.0",
+  "description": "Bringing async/await to ES5",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && istanbul cover node_modules/.bin/_mocha",
+    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": true,
+    "globals": [
+      "describe",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it"
+    ],
+    "ignores": [
+      "examples/*"
+    ],
+    "rules": {
+      "brace-style": [
+        2,
+        "stroustrup"
+      ],
+      "space-before-function-paren": [
+        2,
+        "never"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakerface/es5-async-await.git"
+  },
+  "keywords": [],
+  "author": "Christopher M. Baker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bakerface/es5-async-await/issues"
+  },
+  "homepage": "https://github.com/bakerface/es5-async-await",
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2",
+    "xo": "^0.13.0"
+  },
+  "dependencies": {
+    "fibers": "^1.0.10",
+    "when": "^3.7.7"
+  }
+}
